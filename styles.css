@@ -5,7 +5,7 @@ section[id*='sect'] {
     overflow: hidden;
 }
 body {
-    background-color: var(--vermelho-500);
+    background-color: var(--vermelho-500)!important;
 }
 /*
     Estilos da Navbar
