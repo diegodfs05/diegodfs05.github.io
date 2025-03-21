@@ -27,6 +27,12 @@
                         </div>
                         <img class="position-absolute w-75 grafismo-bottomright" src="./assets/images/grafismo-amarelo-upperLeft.png" alt="">
                     </div>
+                    <div class="d-flex justify-content-center w-100 pt-5">
+                        <a href="#sect-intro" class="d-flex align-items-center gap-2 btn bg-amarelo border-laranja c-vermelho-500 fw-700 lh-2 fs-6 btn-click-shadow" style="z-index: 3">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#961616" width="24"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+                            Conheça
+                        </a>
+                    </div>
                 </div>
                 <style>
                     #sect-banner {
@@ -34,20 +40,21 @@
                     }
                     #sect-banner .grafismo-upperleft {
                         z-index: 2;
-                        top: -4.0em;
-                        left: -4.0em;
+                        top: -4.7em;
+                        left: -4.7em;
                     }
                     #sect-banner .grafismo-bottomright {
                         transform:rotateY(180deg) rotateX(180deg);
                         z-index: 2;
-                        bottom: -4.0em;
-                        right: -4.0em;
+                        bottom: -4.7em;
+                        right: -4.7em;
                     }
                     #sect-banner .alfredo-bg {
                         background-color: #dadada;
                         background-image: url('./assets/images/closeup-alfredo.jpg');
                         background-size: cover;
                         background-position: center 0%;
+                        max-width: 860px;
                     }
                     #sect-banner .page-title {
                         transform: rotateZ(-5deg);
@@ -67,6 +74,31 @@
                         position: relative;
                         right: -1.5em;
                         top: -0.5em;
+                    }
+                </style>
+            </section>
+
+            <!-- SEÇÃO INTRO -->
+            <section id="sect-intro">
+                <div class="w-100 py-5 py-lg-6 bg-amarelo sect-bg">
+                    <div class="container">
+                        <h1 class="c-branco fs-xl font-cursive-bold">Introdução</h1>
+                        <div class="d-flex justify-content-center">
+                            <video controls class="w-100 border-radius-3" async>
+                                <source src="/assets/videos/intro-video.mp4" type="video/mp4" />
+                                Download the
+                                <a href="/assets/videos/intro-video.mp4">MP4</a>
+                                video.
+                              </video>
+                        </div>
+                    </div>
+                </div>
+                <style>
+                    #sect-intro .sect-bg {
+                        background: linear-gradient(to bottom right, var(--amarelo) 0%, var(--laranja) 100%);
+                    }
+                    #sect-intro h1 {
+                        text-shadow: -2px 2px 0px #00000044;
                     }
                 </style>
             </section>
