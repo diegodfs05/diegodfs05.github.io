@@ -1,4 +1,4 @@
-fetch("./partials/navbar.html") // Use the URL of your external HTML
+fetch("/partials/navbar.html") // Use the URL of your external HTML
   .then((response) => {
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);

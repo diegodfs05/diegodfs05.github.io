@@ -78,6 +78,12 @@ body {
     transform: translate(2px, 2px);
     box-shadow: 0px 0px 0px 0px #00000094;
 }
+.z-index-0 {z-index: 0!important;}
+.z-index-1 {z-index: 1!important;}
+.z-index-2 {z-index: 2!important;}
+.z-index-3 {z-index: 3!important;}
+.z-index-4 {z-index: 4!important;}
+.z-index-5 {z-index: 5!important;}
 
 /* BORDERS */
 .border-radius-1 {border-radius: 4px;}
@@ -131,12 +137,51 @@ body {
 .c-preto {color: var(--preto)!important;}
 .c-cinza {color: var(--cinza)!important;}
 
+/* TEXT SHADOWS */
+.font-shadow-branco {text-shadow: -3px 2px 0px var(--branco);}
+.font-shadow-branco-s {text-shadow: -3px 2px 0px #ffffff66;}
+.font-shadow-preto {text-shadow: -3px 2px 0px var(--preto);}
+.font-shadow-amarelo {text-shadow: -3px 2px 0px var(--amarelo);}
+.font-shadow-verde {text-shadow: -3px 2px 0px var(--verde);}
+.font-shadow-cinza {text-shadow: -3px 2px 0px var(--cinza);}
+.font-shadow-vermelho {text-shadow: -3px 2px 0px var(--vermelho);}
+
 /* BACKGROUND-COLORS */
 .bg-branco {background-color: var(--branco)!important;} 
 .bg-vermelho {background-color: var(--vermelho)!important;}
+.bg-vermelho-500 {background-color: var(--vermelho-500)!important;}
 .bg-laranja {background-color: var(--laranja)!important;}
 .bg-amarelo {background-color: var(--amarelo)!important;}
 .bg-verde {background-color: var(--verde)!important;}
 .bg-preto {background-color: var(--preto)!important;}
 .bg-cinza {background-color: var(--cinza)!important;}
   
+/* text-alignments */
+.text-left {text-align: left!important;}
+.text-right {text-align: right!important;}
+
+/* GRAFISMOS ESTRELINHAS */
+.grafismo {
+    position: absolute;
+    width: 75%;
+    z-index: 2;
+}
+.grafismo-upperright {
+    transform:rotateY(180deg);
+    top: -4.7em;
+    right: -4.7em;;
+}
+.grafismo-upperleft {    
+    top: -4.7em;
+    left: -4.7em;
+}
+.grafismo-bottomright {
+    transform:rotateY(180deg) rotateX(180deg);
+    bottom: -4.7em;
+    right: -4.7em;
+}
+.grafismo-bottomleft {
+    transform: rotateX(180deg);
+    bottom: -4.7em;
+    left: -4.7em;
+}
