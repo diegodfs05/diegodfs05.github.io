@@ -11,7 +11,19 @@ fetch("/partials/navbar.html") // Use the URL of your external HTML
   .catch((error) => {
     console.error("Error fetching remote HTML:", error);
   });
-
+fetch("/partials/footer.html") // Use the URL of your external HTML
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    return response.text();
+  })
+  .then((htmlContent) => {
+    document.querySelector("main").innerHTML += htmlContent;
+  })
+  .catch((error) => {
+    console.error("Error fetching remote HTML:", error);
+  });
 // NAVBAR CONTROLLER
 setTimeout(() => {
   let navBar = document.getElementById("sect-navbar");
