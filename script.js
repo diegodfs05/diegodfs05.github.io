@@ -24,6 +24,10 @@ fetch("/partials/footer.html") // Use the URL of your external HTML
   .catch((error) => {
     console.error("Error fetching remote HTML:", error);
   });
+
+// FORCE CACHE CLEAN STYLES AND SCRIPT
+
+
 // NAVBAR CONTROLLER
 setTimeout(() => {
   let navBar = document.getElementById("sect-navbar");
@@ -55,6 +59,17 @@ setTimeout(() => {
   });
 }, 1500);
 
+// INIT AOS
+/*AOS.init({
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 0, // offset (in px) from the original trigger point
+  delay: 200, // values from 0 to 3000, with step 50ms
+  duration: 1000, // values from 0 to 3000, with step 50ms
+  mirror: true, // whether elements should animate out while scrolling past them
+});
+*/
+
+// MÉTODOS DO MÓDULO
 function toggleMenu() {
   let navBar = document.getElementById("sect-navbar");
   navBar.classList.toggle("open");
@@ -63,3 +78,4 @@ function closeMenu() {
   let navBar = document.getElementById("sect-navbar");
   navBar.classList.remove("open");
 }
+
