@@ -1,0 +1,190 @@
+/* -- VARIÁVEIS -- */
+:root {
+    --branco: #ffffff;
+    --vermelho: #bf1010;
+    --vermelho-500: #961616;
+    --laranja: #FFA32A;
+    --amarelo: #FFED00;
+    --amarelo-300: #ffe976;
+    --verde: #008036;
+    --preto: #0f0f0f;
+    --cinza: #303435;
+}
+
+
+
+/* -- FONTS -- */
+/* 1) Cursive Regular */
+@font-face {
+    font-family: 'TangerineScript';
+    src: url('./assets/fonts/Tangerine-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+  
+/* 2) Cursive Bold */
+@font-face {
+    font-family: 'TangerineScript Bold';
+    src: url('./assets/fonts/Tangerine-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+  
+/* 3) Sans Variable (Regular) */
+@font-face {
+    font-family: 'JosefinSans';
+    src: url('./assets/fonts/JosefinSans-VariableFont_wght.ttf') format('truetype');
+    font-weight: 200 900;
+    font-style: normal;
+    font-display: swap;
+}
+  
+/* 4) Sans Variable (Italic) */
+@font-face {
+    font-family: 'JosefinSans';
+    src: url('./assets/fonts/JosefinSans-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 200 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+.font-script, .font-cursive {
+    font-family: "TangerineScript", cursive!important;
+}
+.font-script-bold, .font-cursive-bold {
+    font-family: "TangerineScript Bold", cursive!important;
+}
+.font-sans {
+    font-family: "JosefinSans", sans-serif!important;
+}
+body {
+    font-family: 'JosefinSans', sans-serif;
+}
+
+/* UTILITIES */
+.cursor-pointer {
+    cursor: pointer;
+}
+.overflow-hidden {
+    overflow: hidden;
+}
+.btn-click-shadow {
+    transition: all .5s;
+    box-shadow: 2px 2px 8px 0px #00000094;
+}
+.btn-click-shadow:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 0px 0px 0px 0px #00000094;
+}
+.text-balance {
+    text-wrap-style: balance;
+}
+.z-index-0 {z-index: 0!important;}
+.z-index-1 {z-index: 1!important;}
+.z-index-2 {z-index: 2!important;}
+.z-index-3 {z-index: 3!important;}
+.z-index-4 {z-index: 4!important;}
+.z-index-5 {z-index: 5!important;}
+
+/* BORDERS */
+.border-radius-1 {border-radius: 4px;}
+.border-radius-2 {border-radius: 8px;}
+.border-radius-3 {border-radius: 16px;}
+.border-radius-4 {border-radius: 32px;}
+.border-radius-5 {border-radius: 64px;}
+.border-radius-6 {border-radius: 128px;}
+
+.border-branco {border-style: solid; border-color: var(--branco);}
+.border-vermelho {border-style: solid; border-color: var(--vermelho);}
+.border-vermelho-500 {border-style: solid; border-color: var(--vermelho-500);}
+.border-laranja {border-style: solid; border-color: var(--laranja);}
+.border-amarelo {border-style: solid; border-color: var(--amarelo);}
+.border-amarelo-300 {border-style: solid; border-color: var(--amarelo-300);}
+.border-verde {border-style: solid; border-color: var(--verde);}
+.border-preto {border-style: solid; border-color: var(--preto);}
+.border-cinza {border-style: solid; border-color: var(--cinza);}
+
+/* FONT SIZES */
+/* min 54 max 110px */
+.fs-xl {font-size: clamp(3.375rem, 2.5947rem + 3.5669vw, 6.875rem)!important;}
+/* min 46 max 90px */
+.fs-lg {font-size: clamp(2.875rem, 2.2619rem + 2.8025vw, 5.625rem)!important;}
+/* min 40 max 68px */
+.fs-1 {font-size: clamp(2.5rem, 2.1099rem + 1.7834vw, 4.25rem)!important;}
+/* min 36 max 60px */
+.fs-2 {font-size: clamp(2.25rem, 1.9156rem + 1.5287vw, 3.75rem)!important;}
+/* min 32 max 52px */
+.fs-3 {font-size: clamp(2rem, 1.7213rem + 1.2739vw, 3.25rem)!important;}
+/* min 28 max 44px */
+.fs-4 {font-size: clamp(1.75rem, 1.5271rem + 1.0191vw, 2.75rem)!important;}
+/* min 24 max 36px */
+.fs-5 {font-size: clamp(1.5rem, 1.3328rem + 0.7643vw, 2.25rem)!important;}
+/* min 20 max 28px */
+.fs-6 {font-size: clamp(1.25rem, 1.1385rem + 0.5096vw, 1.75rem)!important;}
+/* min 12 max 16px */
+.fs-bs {font-size: clamp(0.75rem, 0.6943rem + 0.2548vw, 1rem)!important;}
+/* min 10 max 12px */
+.fs-sm {font-size: clamp(0.625rem, 0.5971rem + 0.1274vw, 0.75rem)!important;}
+/* min 8 max 10px */
+.fs-xs {font-size: clamp(0.5rem, 0.4721rem + 0.1274vw, 0.625rem)!important;}
+
+/* FONT COLORS */
+.c-branco {color: var(--branco)!important;} 
+.c-vermelho {color: var(--vermelho)!important;}
+.c-vermelho-500 {color: var(--vermelho-500)!important;}
+.c-laranja {color: var(--laranja)!important;}
+.c-amarelo {color: var(--amarelo)!important;}
+.c-verde {color: var(--verde)!important;}
+.c-preto {color: var(--preto)!important;}
+.c-cinza {color: var(--cinza)!important;}
+
+/* TEXT SHADOWS */
+.font-shadow-branco {text-shadow: -3px 2px 0px var(--branco);}
+.font-shadow-branco-s {text-shadow: -3px 2px 0px #ffffff66;}
+.font-shadow-preto {text-shadow: -3px 2px 0px var(--preto);}
+.font-shadow-amarelo {text-shadow: -3px 2px 0px var(--amarelo);}
+.font-shadow-verde {text-shadow: -3px 2px 0px var(--verde);}
+.font-shadow-cinza {text-shadow: -3px 2px 0px var(--cinza);}
+.font-shadow-vermelho {text-shadow: -3px 2px 0px var(--vermelho);}
+
+/* BACKGROUND-COLORS */
+.bg-branco {background-color: var(--branco)!important;} 
+.bg-vermelho {background-color: var(--vermelho)!important;}
+.bg-vermelho-500 {background-color: var(--vermelho-500)!important;}
+.bg-laranja {background-color: var(--laranja)!important;}
+.bg-amarelo {background-color: var(--amarelo)!important;}
+.bg-verde {background-color: var(--verde)!important;}
+.bg-preto {background-color: var(--preto)!important;}
+.bg-cinza {background-color: var(--cinza)!important;}
+  
+/* text-alignments */
+.text-left {text-align: left!important;}
+.text-right {text-align: right!important;}
+
+/* GRAFISMOS ESTRELINHAS */
+.grafismo {
+    position: absolute;
+    width: 75%;
+    z-index: 2;
+}
+.grafismo-upperright {
+    transform:rotateY(180deg);
+    top: -4.7em;
+    right: -4.7em;;
+}
+.grafismo-upperleft {    
+    top: -4.7em;
+    left: -4.7em;
+}
+.grafismo-bottomright {
+    transform:rotateY(180deg) rotateX(180deg);
+    bottom: -4.7em;
+    right: -4.7em;
+}
+.grafismo-bottomleft {
+    transform: rotateX(180deg);
+    bottom: -4.7em;
+    left: -4.7em;
+}

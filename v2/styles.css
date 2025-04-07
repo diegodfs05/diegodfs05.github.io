@@ -1,0 +1,170 @@
+.cursor-pointer {
+    cursor: pointer;
+}
+section[id*='sect'] {
+    overflow: hidden;
+}
+body {
+    background-color: var(--vermelho-500)!important;
+}
+/*
+    Estilos da Navbar
+*/
+#sect-navbar img[src*="logo"] {
+    min-width: 250px;
+    cursor: pointer;
+}
+
+#sect-navbar {
+    background: var(--vermelho-500);
+    padding: 30px 0px;
+    transition: all .5s;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 5;
+}
+
+#sect-navbar.short {
+    background: var(--vermelho-500);
+    opacity: .9;
+    padding: 15px 0px;
+    backdrop-filter: blur(5px);
+    overflow: visible !important;
+}
+
+#sect-navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sect-navbar .container img[src*="logo"] {
+    width: 200px;
+
+}
+
+#sect-navbar .container .menu-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    transition: all .5s;
+    gap: 15px;
+    transform-origin: 100% 0%;
+}
+
+#sect-navbar .container .menu-links a {
+    color: #ffffff !important;
+    text-decoration: none;
+    font-size: 13pt !important;
+    font-weight: 600;
+    transition: all .5s;
+    border-bottom: solid 3px transparent;
+    text-align: center;
+}
+
+#sect-navbar .container .menu-links a:hover {
+    color: var(--amarelo) !important;
+    border-bottom: solid 3px var(--amarelo);
+}
+
+#sect-navbar .container .nav-menu-btn {
+    display: none;
+}
+
+#sect-navbar .container .menu-background {
+    z-index: -4;
+    display: none;
+    transition: all .5s;
+    visibility: hidden;
+}
+
+@media (max-width: 1280px) {
+    #sect-navbar {
+        padding: 30px 0px;
+        position: fixed;
+        z-index: 4 !important;
+    }
+
+    #sect-navbar .container img[src*="logo"] {
+        width: 190px;
+    }
+
+    #sect-navbar .container .nav-menu-btn {
+        display: block;
+        z-index: 4;
+        position: absolute;
+        top: 32%;
+        right: 40px;
+        bottom: 0px;
+        cursor: pointer;
+    }
+
+    #sect-navbar.short .container .nav-menu-btn {
+        top: 23%;
+    }
+
+    #sect-navbar .container .nav-menu-btn svg {
+        width: 25px;
+        transition: all .5s;
+    }
+
+    #sect-navbar .container .nav-menu-btn svg:hover {
+        fill: var(--amarelo) !important;
+        transform: scale(1.1);
+    }
+
+    #sect-navbar .container .menu-links {
+        position: fixed;
+        transform: scaleX(0);
+        top: 0px;
+        right: 0px;
+        padding: 150px 40px 80px 20px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        height: 100vh;
+        background: var(--vermelho-500);
+        width: 330px;
+        z-index: 3;
+        opacity: 0;
+    }
+
+    #sect-navbar.open .container .menu-links {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+
+    #sect-navbar .container .menu-links .separador {
+        display: none;
+    }
+
+    #sect-navbar .container .menu-links a {
+        text-align: right;
+        margin-block: 10px;
+    }
+
+    #sect-navbar .container .menu-background {
+        display: block;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        background: #00000094;
+        backdrop-filter: blur(5px);
+        width: 100%;
+        height: 100vh;
+        opacity: 0;
+        cursor: default;
+    }
+
+    #sect-navbar.open .container .menu-background {
+        z-index: 2;
+        opacity: 1;
+        cursor: pointer;
+        visibility: visible;
+    }
+}
+
+/* ESTILOS DO BANNER */
