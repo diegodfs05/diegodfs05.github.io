@@ -18,7 +18,7 @@
         <main>
             <!-- SEÇÃO BANNER -->
             <section id="sect-banner">
-                <div class="w-100 py-5 py-lg-6 bg-vermelho">
+                <div class="w-100 py-5 py-lg-6 sect-bg bg-vermelho">
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-12 col-lg-10">
@@ -46,11 +46,12 @@
                     #sect-banner {
                         margin-top: 121px;
                     }
-                    #sect-banner .alfredo-bg {
+                    #sect-banner .sect-bg {
                         background-color: #dadada;
-                        background-image: url('./assets/images/closeup-alfredo.jpg');
-                        background-size: cover;
-                        background-position: center 0%;
+                        background-image: url('./assets/images/foto-alfredo-e-familia-ai-upscaled-bg.jpg');
+                        /* background-size: 100%; */
+                        /* background-position: center; */
+                        animation: 5s infinite alternate bg-movement;
                     }
                     #sect-banner .page-title {
                         transform: rotateZ(-5deg);
@@ -64,6 +65,16 @@
                         position: relative;
                         right: -1.5em;
                         top: -0.5em;
+                    }
+                    @keyframes bg-movement {
+                        0% {
+                            background-position: 100% 0%;
+                            background-size: 105%;
+                        }
+                        100% {
+                            background-position: 0% 100%;
+                            background-size: 100%;
+                        }
                     }
                     </style>
             </section>

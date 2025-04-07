@@ -166,25 +166,25 @@ body {
 /* GRAFISMOS ESTRELINHAS */
 .grafismo {
     position: absolute;
-    width: 75%;
+    width: 50%;
     z-index: 2;
 }
 .grafismo-upperright {
     transform:rotateY(180deg);
-    top: -4.7em;
-    right: -4.7em;;
+    top: -2.6em;
+    right: -2.6em;;
 }
 .grafismo-upperleft {    
-    top: -4.7em;
-    left: -4.7em;
+    top: -2.6em;
+    left: -2.6em;
 }
 .grafismo-bottomright {
     transform:rotateY(180deg) rotateX(180deg);
-    bottom: -4.7em;
-    right: -4.7em;
+    bottom: -2.6em;
+    right: -2.6em;
 }
 .grafismo-bottomleft {
     transform: rotateX(180deg);
-    bottom: -4.7em;
-    left: -4.7em;
+    bottom: -2.6em;
+    left: -2.6em;
 }
